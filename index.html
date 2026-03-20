@@ -1,18 +1,52 @@
-<!-- Updated index.html with API route fixes -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WARROOM ULTRA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <script>
-        // Example of fetching data through the new API endpoint
-        fetch('/api/analyze/someData')
-            .then(response => response.json())
-            .then(data => console.log(data));
-    </script>
+    <header>
+        <h1>WARROOM ULTRA</h1>
+    </header>
+    <main>
+        <section id="market-data">
+            <h2>Market Data</h2>
+            <div id="data-display">
+                <!-- Market data will be injected here -->
+            </div>
+        </section>
+        <section id="intelligence-engine">
+            <h2>Intelligence Engine</h2>
+            <div id="engine-output">
+                <!-- Intelligence engine output will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 WARROOM. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+#market-data, #intelligence-engine {
+    margin: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+}
